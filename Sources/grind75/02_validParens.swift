@@ -5,11 +5,6 @@
 // Open brackets are closed in the correct order.
 // Every close bracket has a corresponding open bracket of the same type.
 
-func runValidParens() {
-    _ = isValidParens("()[]{}")
-}
-
-// my implementation
 func isValidParens(_ s : String) -> Bool {
     var charStack: [Character] = []
     let openParens = "([{"
