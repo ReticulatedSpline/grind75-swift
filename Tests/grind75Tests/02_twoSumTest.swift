@@ -1,7 +1,7 @@
 import Testing
 @testable import grind75
 
-@Suite("twoSumTests")
+@Suite("02_twoSumTests")
 struct twoSumTests {
     @Test func example1() {
         let result = twoSum([2, 7, 11, 15], 9)
