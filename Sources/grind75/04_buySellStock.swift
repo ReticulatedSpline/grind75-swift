@@ -10,15 +10,15 @@
 
 func maxProfit(_ prices: [Int]) -> Int {
     var maxProfit = 0
+    var minPrice = Int.max
 
-    for i in 0..<prices.count {
-        for j in (i + 1)..<prices.count {
-            let profit = prices[j] - prices[i] 
-            if profit > maxProfit {
-                maxProfit = profit
-            }
-        }
+    for price in prices {
+        minPrice = min(minPrice, price)
+        maxProfit = max(maxProfit, price - minPrice)
     }
     
     return maxProfit;
 }
+
+// This seems to be optimal. My first naive approach was O(n^2) time complexity,
+// wheras this is O(n).

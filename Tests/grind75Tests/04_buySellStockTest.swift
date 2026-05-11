@@ -13,4 +13,9 @@ struct buySellStockTest {
         let result = maxProfit([7,6,4,3,1])
         #expect(result == 0)
     }
+
+    @Test func example3() {
+        let result = maxProfit([3,3,5,0,0,3,1,4])
+        #expect(result == 6)
+    }
 }
