@@ -17,7 +17,7 @@ extension ListNode: Equatable {
     }
 }
 
-@Suite("03_mergeSortedLists")
+@Suite("03_mergeSortedListTests")
 struct mergeSortedListsTests {
 
     func nodeListFactory(arr: [Int]) -> ListNode? {
